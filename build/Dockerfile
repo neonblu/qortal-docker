@@ -3,4 +3,4 @@ WORKDIR /
 RUN apt update && apt upgrade -y && apt install -y git maven sudo 
 RUN git clone https://github.com/neonblu/qortal-docker pre && cd pre && chmod +x go.sh
 EXPOSE 12388
-CMD ./core/go.sh
+CMD ./pre/go.sh

@@ -4,5 +4,7 @@ cp -r pre/* /core
 cd /core/
 echo '{}' > settings.json
 mvn clean package
+ls
+pwd
 ./run.sh
 ./ui_install.sh
