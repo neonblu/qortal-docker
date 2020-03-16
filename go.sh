@@ -7,4 +7,4 @@ mvn clean package
 ls
 pwd
 ./run.sh
-./ui_install.sh
+sudo ./ui_install.sh
