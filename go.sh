@@ -2,7 +2,16 @@
 git clone https://github.com/qort/qortal /core
 cp -r pre/* /core
 cd /core/
-echo '{}' > settings.json
+if $DOC=TRUE
+  then
+    echo '{
+  "apiDocumentationEnabled": true
+    }' > settings.json
+    cat settings.json
+  else
+    echo '{}' > settings.json
+    cat settings.json
+fi
 mvn clean package
 ls
 pwd
