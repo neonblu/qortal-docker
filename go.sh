@@ -2,7 +2,7 @@
 git clone https://github.com/qort/qortal /core
 cp -r pre/* /core
 cd /core/
-if [[$DOC == TRUE]]
+if [ $DOC == TRUE ]
   then
     echo '{
   "apiDocumentationEnabled": true
