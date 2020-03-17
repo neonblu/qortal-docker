@@ -6,15 +6,13 @@ if [ "$DOC" == "TRUE" ]
   then
     echo '{
   "apiDocumentationEnabled": true
-    }' > settings.json
+}' > settings.json
     cat settings.json
   else
     echo '{}' > settings.json
     cat settings.json
 fi
 mvn clean package
-ls
-pwd
 ./run.sh
 # Modified Qortal UI Install script for Docker Image - Credit to Crowetic for initial version
   echo -e '---CLONING ALL UI REPOSITORIES---'
